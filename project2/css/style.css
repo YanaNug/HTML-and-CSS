@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Lato;
-    font-size: 14px;
     width: 100vw;
     margin: 0 auto;
+    font-family: Lato;
+    font-size: 14px;
 }
 a {
     text-decoration: none;
@@ -48,27 +48,44 @@ img {
 .logo {
     margin-right: 41px;
 }
-.search {
+/* .search {
 
-}
-.header__block2 {
+} */
+/* .header__block2 {
 
-}
+} */
 .menu {
     margin-right: 33px;
 }
 .profile {
     margin-right: 33px;
 }
-.basket {
+/* .basket {
 
-}
+} */
 @media (max-width:1024px){
     .header {
         padding: 18px 35px;
     }
     .basket {
         padding-left: 42px;
+    }
+}
+@media(max-width:768px){
+
+    .basket {
+margin-right: 20px;    }
+}
+@media(max-width:375px){
+    .header {
+        width: 100vw;
+        padding: 18px 16px;
+    }
+    .profile {
+        display: none;
+    }
+    .basket {
+        display: none;
     }
 }
 /* --------------------------------- */
@@ -88,9 +105,9 @@ img {
 .main__left {
     margin-left: -100px;
 }
-.main__rigth {
+/* .main__rigth {
 
-}
+} */
 .main-rigth__title {
     color: #222222;
     max-width: 377px;
@@ -130,6 +147,27 @@ img {
     .main__rigth {
     margin-left: -33px;
     }
+}
+@media (max-width:1024px){
+    .main__left {
+       display: none;
+    }
+    .main__rigth {
+        margin: 0 auto;
+        text-align: left;
+        padding: 147px 83px 148px 55px;
+    }
+    .main-rigth__title {
+        font-size: 20px;
+    }
+    .main-rigth__title::before {
+        height: 61px;
+        margin-left: -27px;
+    }
+    .title_bold {
+        font-size: 35px;
+    }
+
 }
 /* --------------------------------- */
 
@@ -232,6 +270,28 @@ img {
     /* justify-content: space-between; */
 }
 }
+@media(max-width:375px) {
+    .catalog-heading {
+        margin-bottom: 64px;
+    }
+    .catalog-heading__blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        /* justify-content: space-between; */
+    }
+    .block__heading {
+        min-width: 344px;
+        min-height: 249px;
+        padding: 105px 70px;
+    }
+    .block_width {
+        min-height: 111px;
+        background-size: cover;
+        padding: 30px 92px;
+    }
+    }
 /* --------------------------------- */
 
 .fetured-items {
@@ -301,7 +361,11 @@ img {
     }
 }
 
-
+@media(max-width:375px){
+    .items-block {
+        gap: 16px;
+    }
+}
 
 
 
@@ -327,9 +391,9 @@ img {
     line-height: 17px;
     margin-bottom: 24px;
  }
- .menu__block{
+ /* .menu__block{
 
- }
+ } */
  .menu__item{
     padding-bottom: 12px;
  }
